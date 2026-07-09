@@ -34,6 +34,7 @@ dependencies:
 
   flutter:
     sdk: flutter
+  gap: ^3.0.1
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -89,6 +90,13 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   fonts:
-    - family: SF Display
+    - family: SF Pro Display
       fonts:
-        - asset: assets/fonts/SF-Pro-Text-Black.otf
+        - asset: assets/fonts/SF-Pro-Display-Black.otf
+          weight: 900
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+          weight: 400

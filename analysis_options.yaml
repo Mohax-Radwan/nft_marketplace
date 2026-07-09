@@ -28,3 +28,6 @@ linter:
     always_declare_return_types: true
     avoid_unnecessary_containers: true
     sort_pub_dependencies: true
+
+formatter:
+  trailing_commas: preserve
