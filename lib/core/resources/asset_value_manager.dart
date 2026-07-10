@@ -14,6 +14,7 @@
 //   String get sfProDisplay => 'SF Pro Display';
 // }
 
+/*
 // not working but I wanna save it for later.
 
 abstract class Assets {
@@ -37,3 +38,4 @@ extension type const FontsNamespace(Null _) {
 
 // for more info or explain how this works :
 // https://share.google/aimode/QQ4iOSUTB39rljnDg
+*/
