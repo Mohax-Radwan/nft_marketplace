@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:nft_marketplace/core/resources/color_value_manager.dart';
 import 'package:nft_marketplace/core/resources/text_style_manager.dart';
+import 'package:nft_marketplace/features/home/views/home_view.dart';
+import 'package:nft_marketplace/features/onboarding/widgets/onboarding_button.dart';
 
 class OnboardingCard extends StatelessWidget {
   const OnboardingCard({
@@ -54,32 +56,13 @@ class OnboardingCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                         horizontal: 27,
                       ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(40),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: MyColors.white.withAlpha(77),
-                            ),
-                            borderRadius: BorderRadius.circular(40),
-                            gradient: const LinearGradient(
-                              colors: [
-                                MyColors.onboardingButtonGradiantColorLeft,
-                                MyColors.onboardingButtonGradiantColorRight,
-                              ],
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                            ),
-                          ),
-                          child: MaterialButton(
-                            minWidth: double.infinity,
-                            onPressed: () {},
-                            child: const Text(
-                              'Get started now',
-                              style: TextStyles.s14w600,
-                            ),
-                          ),
-                        ),
+                      child: OnboardingButton(
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(
+                            context,
+                            HomeView.route
+                          );
+                        },
                       ),
                     ),
                   ),
