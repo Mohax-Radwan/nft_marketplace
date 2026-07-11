@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
@@ -7,6 +5,7 @@ import 'package:nft_marketplace/core/resources/color_value_manager.dart';
 import 'package:nft_marketplace/core/resources/images_value_manager.dart';
 import 'package:nft_marketplace/core/resources/text_style_manager.dart';
 import 'package:nft_marketplace/features/home/widgets/category_container.dart';
+import 'package:nft_marketplace/features/home/widgets/category_container2.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -34,7 +33,10 @@ class HomeView extends StatelessWidget {
           children: [
             SizedBox(width: double.infinity),
             Gap(20),
-            CategoryContainer(),
+            CategoryContainer2(
+              image: Images.homeCategory2,
+              title: 'Art',
+            ),
           ],
         ),
       ),

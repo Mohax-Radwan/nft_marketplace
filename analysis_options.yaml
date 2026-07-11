@@ -30,4 +30,5 @@ linter:
     sort_pub_dependencies: true
 
 formatter:
+  page_width: 120
   trailing_commas: preserve
