@@ -7,6 +7,7 @@ import 'package:nft_marketplace/core/resources/text_style_manager.dart';
 import 'package:nft_marketplace/features/home/constants/constants.dart';
 import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/widgets/category_container2.dart';
+import 'package:nft_marketplace/features/home/widgets/category_list_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -35,24 +36,11 @@ class HomeView extends StatelessWidget {
           ),
           backgroundColor: Colors.transparent,
         ),
-        body: Column(
+        body: const Column(
           children: [
-            const SizedBox(width: double.infinity),
-            const Gap(20),
-            SizedBox(
-              height: Constants.categoryContainerHeight,
-              child: ListView.separated(
-                scrollDirection: Axis.horizontal,
-                controller: ScrollController(
-                  // Height * Index (the ratio for the separator)  ⇓⇓⇓⇓⇓⇓⇓⇓⇓
-                  initialScrollOffset: Constants.categoryContainerHeight * 1.25,
-                ),
-                itemCount: categories.length,
-                itemBuilder: (BuildContext context, int index) =>
-                    CategoryContainer2(image: categories[index].image, title: categories[index].title),
-                separatorBuilder: (BuildContext context, int index) => const Gap(9),
-              ),
-            ),
+            SizedBox(width: double.infinity),
+            Gap(20),
+            CategoryListWidget(categories: categories),
           ],
         ),
       ),
