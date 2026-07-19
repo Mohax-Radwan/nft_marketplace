@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:nft_marketplace/core/resources/images_value_manager.dart';
 import 'package:nft_marketplace/core/resources/text_style_manager.dart';
+import 'package:nft_marketplace/features/home/constants/constants.dart';
 
 class CategoryContainer extends StatelessWidget {
   const CategoryContainer({
@@ -17,8 +18,8 @@ class CategoryContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250,
-      height: 165,
+      width: Constants.categoryContainerWidth,
+      height: Constants.categoryContainerWidth,
       decoration: BoxDecoration(
         image: const DecorationImage(
           image: AssetImage(Images.homeCategory2),

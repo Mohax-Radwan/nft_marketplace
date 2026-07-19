@@ -6,8 +6,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:nft_marketplace/core/resources/images_value_manager.dart';
 import 'package:nft_marketplace/core/resources/text_style_manager.dart';
+import 'package:nft_marketplace/features/home/constants/constants.dart';
 
 class CategoryContainer2 extends StatelessWidget {
   const CategoryContainer2({
@@ -21,8 +21,8 @@ class CategoryContainer2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 250,
-      height: 165,
+      width: Constants.categoryContainerWidth,
+      height: Constants.categoryContainerWidth,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(27),
         child: Stack(
