@@ -8,6 +8,7 @@ import 'package:nft_marketplace/core/resources/text_style_manager.dart';
 import 'package:nft_marketplace/features/home/constants/constants.dart';
 import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/widgets/category_list_widget.dart';
+import 'package:nft_marketplace/features/home/widgets/trending_collections_container.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -51,48 +52,9 @@ class HomeView extends StatelessWidget {
               ),
             ),
             const Gap(10),
-            Container(
-              padding: const EdgeInsets.all(9),
-              width: Constants.trendingContainerWidth,
-              height: Constants.trendingContainerHeight,
-              decoration: BoxDecoration(
-                color: MyColors.white.withValues(alpha: 0.1),
-                border: Border.all(
-                  color: MyColors.white.withValues(alpha: 0.2),
-                ),
-                borderRadius: BorderRadius.circular(27),
-              ),
-              child: Column(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadiusGeometry.circular(20),
-                    child: Image.asset(
-                      Images.homeTrending1,
-                      width: 140,
-                      height: 140,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Gap(9),
-                  Row(
-                    children: [
-                      Text(
-                        '3D Art',
-                        style: TextStyles.s12w600,
-                      ),
-                      Spacer(),
-                      Icon(
-                        CupertinoIcons.heart_fill,
-                        color: Colors.red,
-                      ),
-                      Text(
-                        ' 200',
-                        style: TextStyles.s12w400.copyWith(color: MyColors.greyText),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            TrendingCollectionsContainer(
+              image: Images.homeTrending1,
+              title: '3D Art',
             ),
           ],
         ),
