@@ -26,11 +26,25 @@ abstract class TextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static const TextStyle s18w600 = TextStyle(
+    fontFamily: Fonts.sfProDisplay,
+    color: MyColors.white,
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
+
   static const TextStyle s12w400 = TextStyle(
     fontFamily: Fonts.sfProDisplay,
     color: MyColors.white,
     fontSize: 12,
     fontWeight: FontWeight.w400,
+  );
+
+  static const TextStyle s12w600 = TextStyle(
+    fontFamily: Fonts.sfProDisplay,
+    color: MyColors.white,
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
   );
 
   static const TextStyle s14w600 = TextStyle(

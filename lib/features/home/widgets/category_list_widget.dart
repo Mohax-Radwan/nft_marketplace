@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:nft_marketplace/features/home/constants/constants.dart';
 import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/widgets/category_container2.dart';
