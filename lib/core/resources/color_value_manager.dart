@@ -11,4 +11,6 @@ abstract class MyColors {
   static const Color whitePink = Color(0xfff5d9ee);
   static const Color divider = Color(0xff422268);
   static const Color smallThickDivider = Color(0xff97A9F6);
+  static const Color green = Color(0xff34C759);
+  static const Color red = Color(0xffFF453A);
 }

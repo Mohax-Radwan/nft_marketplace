@@ -10,6 +10,8 @@ class StatsPopupButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final BorderRadius radius = BorderRadius.circular(27);
+
     return ClipRRect(
       borderRadius: BorderRadius.circular(27),
       child: BackdropFilter(
@@ -22,7 +24,7 @@ class StatsPopupButton extends StatelessWidget {
           height: 40,
           decoration: BoxDecoration(
             color: MyColors.white.withValues(alpha: 0.05),
-            borderRadius: BorderRadius.circular(27),
+            borderRadius: radius,
             border: Border.all(
               color: MyColors.white.withValues(alpha: 0.15),
             ),
@@ -30,6 +32,7 @@ class StatsPopupButton extends StatelessWidget {
           child: PopupMenuButton<String>(
             onSelected: (context) {},
             padding: EdgeInsets.zero,
+            borderRadius: radius,
             // Drops the menu directly under the button
             offset: const Offset(0, 45),
             itemBuilder: (context) => [
