@@ -9,4 +9,14 @@ abstract class Images {
   static const String homeTrending1 = 'assets/images/home_trending1.jpg';
   static const String homeTrending2 = 'assets/images/home_trending2.jpg';
   static const String homeTrending3 = 'assets/images/home_trending3.jpg';
+  static const String homeTrending4 = 'assets/images/home_trending4.jpg';
+
+  static const String homeTopsellers1 = 'assets/images/home_topsellers1.jpg';
+  static const String homeTopsellers2 = 'assets/images/home_topsellers2.jpg';
+  static const String homeTopsellers3 = 'assets/images/home_topsellers3.jpg';
+  static const String homeTopsellers4 = 'assets/images/home_topsellers4.jpg';
+  static const String homeTopsellers5 = 'assets/images/home_topsellers5.jpg';
+  static const String homeTopsellers6 = 'assets/images/home_topsellers6.jpg';
+  static const String homeTopsellers7 = 'assets/images/home_topsellers7.jpg';
+  static const String homeTopsellers8 = 'assets/images/home_topsellers8.jpg';
 }

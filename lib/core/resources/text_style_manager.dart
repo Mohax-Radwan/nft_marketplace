@@ -47,6 +47,20 @@ abstract class TextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static const TextStyle s13w400 = TextStyle(
+    fontFamily: Fonts.sfProDisplay,
+    color: MyColors.white,
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+  );
+
+  static const TextStyle s13w600 = TextStyle(
+    fontFamily: Fonts.sfProDisplay,
+    color: MyColors.white,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+  );
+
   static const TextStyle s14w600 = TextStyle(
     fontFamily: Fonts.sfProDisplay,
     color: MyColors.white,

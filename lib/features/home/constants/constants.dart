@@ -6,4 +6,7 @@ abstract class Constants {
 
   static const double trendingContainerWidth = 160;
   static const double trendingContainerHeight = 200;
+
+  static const double topSellersWidth = 160;
+  static const double topSellersHeight = 244;
 }

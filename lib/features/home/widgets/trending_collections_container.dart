@@ -54,7 +54,7 @@ class TrendingCollectionsContainer extends StatelessWidget {
               ),
               Text(
                 ' 200',
-                style: TextStyles.s12w400.copyWith(color: MyColors.greyText),
+                style: TextStyles.s12w400.copyWith(color: MyColors.grey),
               ),
             ],
           ),
