@@ -5,7 +5,6 @@ import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/models/top_sellers_model.dart';
 import 'package:nft_marketplace/features/home/models/trending_collection_model.dart';
 import 'package:nft_marketplace/features/home/widgets/category_list_widget.dart';
-import 'package:nft_marketplace/features/home/widgets/top_sellers_container.dart';
 import 'package:nft_marketplace/features/home/widgets/top_sellers_list_widget.dart';
 import 'package:nft_marketplace/features/home/widgets/trending_list_widget.dart';
 

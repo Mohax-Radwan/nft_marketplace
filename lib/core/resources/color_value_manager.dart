@@ -9,4 +9,6 @@ abstract class MyColors {
   static const Color primary = Color(0xff211134);
   static const Color grey = Color(0xff9c9bb4);
   static const Color whitePink = Color(0xfff5d9ee);
+  static const Color divider = Color(0xff422268);
+  static const Color smallThickDivider = Color(0xff97A9F6);
 }

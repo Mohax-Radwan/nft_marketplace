@@ -33,6 +33,13 @@ abstract class TextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static const TextStyle s16w600 = TextStyle(
+    fontFamily: Fonts.sfProDisplay,
+    color: MyColors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+
   static const TextStyle s12w400 = TextStyle(
     fontFamily: Fonts.sfProDisplay,
     color: MyColors.white,

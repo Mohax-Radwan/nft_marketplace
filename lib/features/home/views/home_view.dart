@@ -7,6 +7,7 @@ import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/models/top_sellers_model.dart';
 import 'package:nft_marketplace/features/home/models/trending_collection_model.dart';
 import 'package:nft_marketplace/features/home/widgets/home_view_body.dart';
+import 'package:nft_marketplace/features/stats/widgets/stats_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -38,21 +39,26 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle(
+    final List<Widget> screens = [
+      const HomeViewBody(
+        categories: categories,
+        trendingCollections: trendingCollections,
+        topSellers: topSellers,
+      ),
+      const StatsViewBody(),
+    ];
+
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light,
         statusBarBrightness: Brightness.dark,
       ),
       child: Scaffold(
         backgroundColor: MyColors.primary,
-        body: HomeViewBody(
-          categories: categories,
-          trendingCollections: trendingCollections,
-          topSellers: topSellers,
-        ),
+        body: screens[1],
         extendBody: true,
-        bottomNavigationBar: CustomBottomNavBar(),
+        bottomNavigationBar: const CustomBottomNavBar(),
       ),
     );
   }
