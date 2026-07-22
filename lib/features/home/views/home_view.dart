@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gap/gap.dart';
 import 'package:nft_marketplace/core/resources/color_value_manager.dart';
 import 'package:nft_marketplace/core/resources/images_value_manager.dart';
-import 'package:nft_marketplace/core/resources/text_style_manager.dart';
 import 'package:nft_marketplace/features/home/models/category_model.dart';
 import 'package:nft_marketplace/features/home/models/trending_collection_model.dart';
-import 'package:nft_marketplace/features/home/widgets/category_list_widget.dart';
-import 'package:nft_marketplace/features/home/widgets/trending_list_widget.dart';
+import 'package:nft_marketplace/features/home/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -33,31 +30,36 @@ class HomeView extends StatelessWidget {
       ),
       child: Scaffold(
         backgroundColor: MyColors.primary,
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'NFT Marketplace',
-            style: TextStyles.s26w600,
-          ),
-          backgroundColor: Colors.transparent,
-        ),
-        body: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(width: double.infinity),
-            Gap(20),
-            CategoryListWidget(categories: categories),
-            Gap(27),
-            Padding(
-              padding: EdgeInsets.only(left: 14),
-              child: Text(
-                'Trending Collections',
-                style: TextStyles.s18w600,
+        body: const HomeViewBody(categories: categories, trendingCollections: trendingCollections),
+        bottomNavigationBar: SizedBox(
+          width: double.infinity,
+          height: 122,
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Container(
+                  width: double.infinity,
+                  height: 88,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(45)),
+                    color: Colors.blue,
+                  ),
+                ),
               ),
-            ),
-            Gap(10),
-            TrendingListWidget(list: trendingCollections),
-          ],
+              Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  width: 70,
+                  height: 70,
+                  decoration: const ShapeDecoration(
+                    color: Colors.red,
+                    shape: StarBorder.polygon(sides: 6, pointRounding: 0.3),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

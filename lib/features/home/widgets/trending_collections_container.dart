@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:nft_marketplace/core/resources/color_value_manager.dart';
-import 'package:nft_marketplace/core/resources/images_value_manager.dart';
 import 'package:nft_marketplace/core/resources/text_style_manager.dart';
 import 'package:nft_marketplace/features/home/constants/constants.dart';
 
